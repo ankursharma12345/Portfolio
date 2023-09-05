@@ -19,7 +19,7 @@ const Header = () => {
           </Typography>
           <ul className="listcontainer">
             <li>
-              <Link href="/">HOME</Link>
+              <Link href="/Portfolio">HOME</Link>
             </li>
             <li>
               <Link href="#about">ABOUT</Link>
