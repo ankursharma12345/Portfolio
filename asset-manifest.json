@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.7afa62f2.css",
+    "main.js": "/Portfolio/static/js/main.c268a86a.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/nordwood-themes-R53t-Tg6J4c-unsplash.jpg": "/Portfolio/static/media/nordwood-themes-R53t-Tg6J4c-unsplash.329fe8c918cccaaae44e.jpg",
+    "static/media/nith-in-w1N1WmLDyHU-unsplash.jpg": "/Portfolio/static/media/nith-in-w1N1WmLDyHU-unsplash.3ad0d69d3a052ed2c20c.jpg",
+    "static/media/mahdis-mousavi-T4-_zzN0tKA-unsplash.jpg": "/Portfolio/static/media/mahdis-mousavi-T4-_zzN0tKA-unsplash.45e1c294f9908685eb4c.jpg",
+    "static/media/jacob-townsend-HxtWHbglHKs-unsplash.jpg": "/Portfolio/static/media/jacob-townsend-HxtWHbglHKs-unsplash.b99cc723f34e54f41a24.jpg",
+    "static/media/azamat-e-FP_N_InBPdg-unsplash.jpg": "/Portfolio/static/media/azamat-e-FP_N_InBPdg-unsplash.3c4d6ef1c3ba964d63f9.jpg",
+    "static/media/Screenshot (1).png": "/Portfolio/static/media/Screenshot (1).1abcf12167a22c86626c.png",
+    "static/media/C++.png": "/Portfolio/static/media/C++.3f8430b31b0960aae7e0.png",
+    "static/media/jpg": "/Portfolio/static/media/76804f67ba38f85e4802d250e5b15504.af5805e4dee2c134391e.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.7afa62f2.css.map": "/Portfolio/static/css/main.7afa62f2.css.map",
+    "main.c268a86a.js.map": "/Portfolio/static/js/main.c268a86a.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7afa62f2.css",
+    "static/js/main.c268a86a.js"
+  ]
+}
