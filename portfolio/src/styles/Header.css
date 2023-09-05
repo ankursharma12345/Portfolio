@@ -1,0 +1,15 @@
+.listcontainer{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+}
+.listcontainer li {
+    margin-left: 50px;
+}
+.listcontainer li a{
+    text-decoration: none;
+    color: white;
+}
+

@@ -1,0 +1,11 @@
+ body{
+    background-image: url("../Images/azamat-e-FP_N_InBPdg-unsplash.jpg");
+    background-attachment:fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+ }
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}

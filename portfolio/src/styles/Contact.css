@@ -1,0 +1,31 @@
+/* .contactBody{
+    background-image: url("../Images/jacob-townsend-HxtWHbglHKs-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 115vh;
+} */
+ /* .boxContainer{
+     background-image: url("../Images/jacob-townsend-HxtWHbglHKs-unsplash.jpg");
+      /* filter: blur(2px);
+     /* position: fixed; */
+      /* background-size: cover;
+     background-repeat: no-repeat;
+     /* background-attachment: fixed; */
+     /* height: 115vh;   */
+/* }    */
+.contactBody{
+    background-image: url("../Images/jacob-townsend-HxtWHbglHKs-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    /* background-position-y: center; */
+    background-position-x: center;
+    /* filter: blur(6px); */
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.text{
+    padding-left: 50px;
+}

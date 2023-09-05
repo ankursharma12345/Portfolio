@@ -1,0 +1,25 @@
+.avatar{
+    top: 2px;
+    background-attachment: fixed;
+}
+.aboutBody{
+    background-image: url("../Images/nordwood-themes-R53t-Tg6J4c-unsplash.jpg");
+    height: 115vh;
+    background-attachment: fixed;
+}
+.spanStyle{
+    color: #0127fd;
+    font-weight: bold;
+    font-size: 17px;
+}
+.img{
+    height: 130px;
+    width: 130px;
+}
+.upperTypo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.secondImage{
+    height: 90px;
+    width: 90px;
+}
