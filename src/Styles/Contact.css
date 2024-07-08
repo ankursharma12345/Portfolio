@@ -1,0 +1,61 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold !important;
+}
+.MuiDialog-paper {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #4f90ae,
+    #1b969a,
+    #aacbbd,
+    #8da25e
+  ) !important;
+  /* background-color: rgb(144, 222, 209) !important; */
+}
+.typography {
+  /* color: rgb(144, 163, 18) !important; */
+  color: rgb(70, 54, 13) !important;
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: 1.4rem !important;
+}
+#Name-helper-text {
+  color: white;
+  font-size: 15px;
+}
+#Email-helper-text {
+  color: white;
+  font-size: 15px;
+}
+.MuiButtonBase-root-MuiButton-root {
+  font-size: 16px !important;
+  font-weight: 400px;
+}
+.number-typo {
+  /* font-size: 0.1px !important; */
+  font-size: 0.95rem !important;
+  font-weight: 400px !important;
+}
+.buttons1,
+.helper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons1{
+  margin-left: 1.2rem !important;
+}
+.helper {
+  margin-top: 1.3rem;
+}
+.whatsapp{
+  font-weight: bold;
+}

@@ -1,0 +1,70 @@
+body,
+html {
+  height: 100%; /* Set the height of the body and html elements to 100% */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    #050c19,
+    #283346,
+    #4b5b78,
+    #7287af,
+    #9ab6e9
+  );
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, left, right;
+  height: 91.2vh;
+  animation-duration: 2s;
+  animation-name: slideIn; /* Name can be anything */
+  overflow: hidden;
+}
+@keyframes slideIn {
+  /* Use that exact name here */
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.main .left {
+  margin-left: 0.5rem;
+}
+.second,
+.third {
+  font-size: 40px;
+}
+.forth {
+  color: goldenrod;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 19px;
+}
+@media (max-width: 600px) {
+  /* For xs screens */
+  .main {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+  /* For sm screens */
+  .main {
+    height: 100vh;
+  }
+}
+@media (min-width: 961px) and (max-width: 1280px) {
+  /* For md screens */
+  .main {
+    height: 100vh;
+  }
+} 

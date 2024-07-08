@@ -1,0 +1,27 @@
+.item {
+  margin-top: 0.2rem !important;
+  display: flex;
+}
+#spanstyle {
+  font-weight: normal;
+  font-size: 12.5px;
+  color: skyblue;
+}
+.appbar {
+  background-color: black !important;
+}
+#home,
+#about,
+#contact,
+#experience {
+  color: white;
+}
+#home:hover,
+#about:hover,
+#experience:hover,
+#contact:hover {
+  border-bottom: 4px solid goldenrod;
+}
+.close-icon {
+  align-self: flex-start;
+}
