@@ -1,7 +1,7 @@
 .container {
-  height: 100vh;
-  /* height: auto; */
-  background-color: black;
+  /* height: 100vh !important; */
+  height: auto !important;
+  background-color: black !important;
   text-align: center;
 }
 
@@ -22,6 +22,7 @@
 .main-heading {
   display: flex;
   justify-content: center;
+  height: 50px !important;
   font-weight: bold;
   color: goldenrod;
 }
@@ -30,11 +31,11 @@
   margin-bottom: 2.1rem;
   text-align: left;
   width: 100%;
-  margin-left: 0.5rem;
 }
 .buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .image-margin {
   margin: 1rem;
@@ -49,9 +50,7 @@
   flex-wrap: wrap;
 }
 .datacontainer {
-  margin-top: 1rem;
-  /* background-color: black; */
-  /* height:fit-content; */
+  margin-top: 1.5rem;
 }
 .lastcontainer {
   background-color: black;
@@ -59,4 +58,14 @@
 .content {
   background-color: black;
   margin-left: 10rem;
+}
+.download {
+  background-color: goldenrod !important;
+  color: black !important;
+  font-weight: 800px !important;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+.my-image {
+  max-height: 28rem !important;
 }

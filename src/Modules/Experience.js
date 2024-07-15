@@ -59,12 +59,48 @@ const Experience = () => {
 
       <Grid container className="expo">
         <Grid item xs={12} sm={12} md={12}>
-          <Typography variant="bold" className="education">
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            variant="bold"
+            className="education"
+          >
             EDUCATION
-          </Typography>
-          <Grid container spacing={1} className="card">
+          </Grid>
+          <Grid container spacing={3} className="card">
             <Grid item xs={12} sm={12} md={4}>
-              <Card sx={{ minWidth: 300 }}>
+              <Card
+                sx={{
+                  minWidth: 280,
+                  height: 120,
+                  backgroundColor: "lightblue",
+                }}
+              >
+                <CardContent>
+                  <Typography className="degree">HIGH SCHOOL</Typography>
+                  <Typography className="schooling">
+                    ST. FRANCIS XAVIER'S INTER COLLEGE (2014-2015)
+                  </Typography>
+
+                  <Typography>
+                    My major subjects are Physics, Chemistry and Mathematics
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item md={7}></Grid>
+
+            <Grid item md={2.8}></Grid>
+            <Grid item xs={12} sm={12} md={4}>
+              <Card
+                sx={{
+                  minWidth: 280,
+                  height: 120,
+                  backgroundColor: "lightblue",
+                }}
+              >
                 <CardContent>
                   <Typography className="degree">INTERMEDIATE</Typography>
                   <Typography className="schooling">
@@ -77,8 +113,17 @@ const Experience = () => {
                 </CardContent>
               </Card>
             </Grid>
+            <Grid item md={4.2}></Grid>
+
+            <Grid item md={3.9}></Grid>
             <Grid item xs={12} sm={12} md={4}>
-              <Card sx={{ minWidth: 300 }}>
+              <Card
+                sx={{
+                  minWidth: 280,
+                  height: 120,
+                  backgroundColor: "lightblue",
+                }}
+              >
                 <CardContent>
                   <Typography className="degree">GRADUATION</Typography>
                   <Typography className="schooling">
@@ -91,8 +136,17 @@ const Experience = () => {
                 </CardContent>
               </Card>
             </Grid>
+            <Grid item md={3.1}></Grid>
+
+            <Grid item md={5}></Grid>
             <Grid item xs={12} sm={12} md={4}>
-              <Card sx={{ minWidth: 300 }}>
+              <Card
+                sx={{
+                  minWidth: 280,
+                  height: 135,
+                  backgroundColor: "lightblue",
+                }}
+              >
                 <CardContent>
                   <Typography className="degree">POST-GRADUATION</Typography>
                   <Typography className="schooling">

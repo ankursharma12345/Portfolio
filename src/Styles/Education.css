@@ -14,15 +14,22 @@
   justify-content: center;
   align-items: center; */
   height: 100vh !important;
-  overflow: hidden;
+  /* height: auto !important; */
+  /* background-color: lightblue; */
+  background-image: url("../image/IMG-20231226-WA0066-EDIT.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100% !important;
 }
 .card {
   margin-top: 1.5rem !important;
+  overflow: hidden;
   /* margin: 0 !important;
   padding: 0 !important; */
 }
 .card .degree {
   font-weight: bold;
 }
-
-
+.inner-card {
+  background-color: lightblue;
+}
