@@ -57,7 +57,13 @@ const Experience = () => {
         </Grid>
       </Grid> */}
 
-      <Grid container className="expo">
+      <Grid
+        container
+        className="expo"
+        justifyContent="center"
+        alignContent="center"
+        spacing={2}
+      >
         <Grid item xs={12} sm={12} md={12}>
           <Grid
             item
