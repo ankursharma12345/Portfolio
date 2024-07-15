@@ -156,38 +156,38 @@ const Contact = (props) => {
               </Button> */}
             </Grid>
             <Grid container className="helper">
-            <Grid
-              item
-              xs={12}
-              sm={12}
-              md={12}
-              className="buttons1"
-              // columnGap={1}
-            >
-              <Grid item md={1}>
-                <IconButton
-                  href="https://www.linkedin.com/in/ankur-sharma-896bab1a0/"
-                  target="_blank"
-                  rel="noopener noreferrer" // This prevents security risks with target="_blank"
-                >
-                  <LinkedInIcon fontSize="large" />
-                </IconButton>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={12}
+                className="buttons1"
+                // columnGap={1}
+              >
+                <Grid item md={1}>
+                  <IconButton
+                    href="https://www.linkedin.com/in/ankur-sharma-896bab1a0/"
+                    target="_blank"
+                    rel="noopener noreferrer" // This prevents security risks with target="_blank"
+                  >
+                    <LinkedInIcon fontSize="large" />
+                  </IconButton>
                 </Grid>
                 <Grid item md={1}>
-                <IconButton
-                  component="a"
-                  href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
-                  target="_blank"
-                  rel="noopener noreferrer" // This prevents security risks with target="_blank"
-                >
-                  <GoogleIcon fontSize="large" />
-                </IconButton>
+                  <IconButton
+                    component="a"
+                    href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
+                    target="_blank"
+                    rel="noopener noreferrer" // This prevents security risks with target="_blank"
+                  >
+                    <GoogleIcon fontSize="large" />
+                  </IconButton>
+                </Grid>
+                <Grid item md={1.8} className="whatsapp">
+                  <WhatsAppIcon fontSize="large" />
+                  <span id="number-typo">8795988520</span>
+                </Grid>
               </Grid>
-              <Grid item md={1.8} className="whatsapp">
-                <WhatsAppIcon fontSize="medium" />
-                <span id="number-typo">8795988520</span>
-              </Grid>
-            </Grid>
             </Grid>
           </Grid>
         </DialogActions>

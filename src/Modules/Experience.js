@@ -57,12 +57,37 @@ const Experience = () => {
         </Grid>
       </Grid> */}
 
-      <Grid container className="expo">
+      <Grid
+        container
+        // className="expo"
+        justifyContent="center"
+        alignContent="center"
+        spacing={2}
+      >
         <Grid item xs={12} sm={12} md={12}>
-          <Typography variant="bold" className="education">
+          <Grid item md={12} variant="bold" className="education">
             EDUCATION
-          </Typography>
-          <Grid container spacing={1} className="card">
+          </Grid>
+          <Grid
+            container
+            spacing={1}
+            className="card"
+            sx={{ height: "100vh !important" }}
+          >
+            <Grid item xs={12} sm={12} md={4}>
+              <Card sx={{ minWidth: 300 }}>
+                <CardContent>
+                  <Typography className="degree">INTERMEDIATE</Typography>
+                  <Typography className="schooling">
+                    SHIVAJI INTER COLLEGE (2016-2017)
+                  </Typography>
+
+                  <Typography>
+                    My major subjects are Physics, Chemistry and Mathematics
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
             <Grid item xs={12} sm={12} md={4}>
               <Card sx={{ minWidth: 300 }}>
                 <CardContent>

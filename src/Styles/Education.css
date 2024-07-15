@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center; */
   height: 100vh !important;
-  overflow: hidden;
+  background-color: lightblue;
 }
 .card {
   margin-top: 1.5rem !important;
@@ -24,5 +24,3 @@
 .card .degree {
   font-weight: bold;
 }
-
-

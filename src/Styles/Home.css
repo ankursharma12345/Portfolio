@@ -17,6 +17,7 @@ html {
     #7287af,
     #9ab6e9
   );
+  width: 100% !important;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom right, left, right;
   height: 91.2vh;
@@ -67,4 +68,4 @@ html {
   .main {
     height: 100vh;
   }
-} 
+}
