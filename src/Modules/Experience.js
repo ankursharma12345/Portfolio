@@ -1,7 +1,6 @@
 import { Card, CardContent, Grid, Typography } from "@mui/material";
 import React, { Fragment } from "react";
 import "../Styles/Education.css";
-import image from "../image/IMG-20231226-WA0066-EDIT.jpg";
 
 const Experience = () => {
   return (
