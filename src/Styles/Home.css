@@ -24,6 +24,7 @@ html {
   animation-duration: 2s;
   animation-name: slideIn; /* Name can be anything */
   overflow: hidden;
+  justify-content: space-around !important;
 }
 @keyframes slideIn {
   /* Use that exact name here */

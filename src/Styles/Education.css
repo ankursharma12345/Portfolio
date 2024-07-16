@@ -16,14 +16,15 @@
   height: 100vh !important;
   /* height: auto !important; */
   /* background-color: lightblue; */
-  background-image: url("../image/IMG-20231226-WA0066-EDIT.jpg");
+  /* background-image: url("../image/IMG-20231226-WA0066-EDIT.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100% !important;
+  height: fit-content !important; */
+  /* width: 100% !important; */
 }
 .card {
-  margin-top: 1.5rem !important;
-  overflow: hidden;
+  /* margin-top: 1.5rem !important;
+  overflow: hidden; */
   /* margin: 0 !important;
   padding: 0 !important; */
 }
@@ -32,4 +33,23 @@
 }
 .inner-card {
   background-color: lightblue;
+}
+.left-image {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh !important;
+  background-image: url("../image/IMG-20231226-WA0066-EDIT.jpg");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center;
+}
+.exp-container {
+  justify-content: space-evenly !important;
+  /* align-items: center !important; */
+}
+.experience {
+  color: rgb(239, 126, 5);
+  margin-bottom: 2.1rem;
+  text-align: left;
+  width: 100%;
 }
