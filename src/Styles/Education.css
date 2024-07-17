@@ -44,12 +44,22 @@
   background-position: center;
 }
 .exp-container {
-  justify-content: space-evenly !important;
+  /* justify-content: space-evenly !important; */
   /* align-items: center !important; */
 }
 .experience {
   color: rgb(239, 126, 5);
-  margin-bottom: 2.1rem;
+  /* margin-bottom: 2.1rem; */
+  /* height: 100vh !important; */
+  height: auto !important;
   text-align: left;
   width: 100%;
 }
+.main-exp {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+/* .card-items {
+  border-left: 4px solid #101010;
+} */
