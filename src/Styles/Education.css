@@ -28,9 +28,16 @@
   /* margin: 0 !important;
   padding: 0 !important; */
 }
-.card .degree {
+.card-items .degree {
   font-weight: bold;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #11a372;
 }
+.card-items .schooling {
+  font-size: medium;
+}
+
 .inner-card {
   background-color: lightblue;
 }
@@ -63,3 +70,29 @@
 /* .card-items {
   border-left: 4px solid #101010;
 } */
+.main-exp .experience {
+  padding: 0px 30px;
+  border-left: 3px solid #bababa;
+}
+.main-exp .experience .card-items {
+  position: relative;
+  /* padding: 20px; */  
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.main-exp .experience .card-items:hover {
+  box-shadow: 0px 3px 12px 0px #ccc;
+  border: 1px solid transparent;
+  background-color: aquamarine;
+}
+.main-exp .experience .card-items::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: #11a372;
+  border: 2px solid white;
+}

@@ -76,7 +76,7 @@ const Experience = () => {
               className="left-image"
               xs={12}
               sm={12}
-              md={4.7}
+              md={5.5}
               sx={{
                 // backgroundImage: `url(${image})`,
                 // backgroundRepeat: "no-repeat",
