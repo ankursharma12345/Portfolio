@@ -1,0 +1,19 @@
+.heading {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.main-container {
+  background-color: azure;
+  margin-top: 2rem;
+  /* height: auto; */
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}

@@ -65,6 +65,7 @@ import "../Styles/Home.css";
 import image from "../image/new_image.png";
 import About from "./About";
 import Experience from "./Experience";
+import Skills from "./Skills";
 
 const Home = () => {
   return (
@@ -111,6 +112,7 @@ const Home = () => {
       <About />
 
       <Experience />
+      <Skills />
     </Fragment>
   );
 };
