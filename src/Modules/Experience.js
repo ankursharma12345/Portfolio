@@ -68,29 +68,27 @@ const Experience = () => {
           <Grid
             container
             className="exp-container"
-            justifyContent="space-between"
+            justifyContent="space-around"
             spacing={0}
           >
             <Grid
               item
               className="left-image"
-              xs={12}
-              sm={12}
+              // xs={12}
+              // sm={12}
               md={5.5}
-              sx={{
-                // backgroundImage: `url(${image})`,
-                // backgroundRepeat: "no-repeat",
-                // backgroundSize: "cover",
-                height: "auto",
-                // backgroundPosition: "center",
-              }}
             ></Grid>
             {/* <Grid item xs={12} sm={12} variant="bold" className="education">
             EDUCATION
           </Grid> */}
             {/* <Grid container spacing={3} className="card"> */}
             <Grid item xs={12} sm={12} md={6} className="main-exp">
-              <Grid container className="experience" rowGap={5.5}>
+              <Grid
+                container
+                className="experience"
+                rowGap={5.5}
+                justifyContent="center"
+              >
                 <Grid item xs={12} sm={12} md={12} className="card-items">
                   <Card
                     sx={

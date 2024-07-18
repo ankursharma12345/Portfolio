@@ -1,32 +1,12 @@
 .education {
   display: flex;
-  /* margin-top: 2rem !important; */
-  /* justify-content: center;
-  align-items: center; */
   font-weight: bold;
   font-size: large;
   margin-left: 1rem !important;
   margin-top: 0 !important;
 }
 .expo {
-  /* background-color: rgb(230, 216, 216); */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   height: 100vh !important;
-  /* height: auto !important; */
-  /* background-color: lightblue; */
-  /* background-image: url("../image/IMG-20231226-WA0066-EDIT.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: fit-content !important; */
-  /* width: 100% !important; */
-}
-.card {
-  /* margin-top: 1.5rem !important;
-  overflow: hidden; */
-  /* margin: 0 !important;
-  padding: 0 !important; */
 }
 .card-items .degree {
   font-weight: bold;
@@ -42,22 +22,24 @@
   background-color: lightblue;
 }
 .left-image {
+  overflow: hidden !important;
   margin: 0 !important;
   padding: 0 !important;
+  /* height: inherit !important; */
+  /* height: inherit !important; */
   height: 100vh !important;
+  /* height: inherit !important; */
+  /* height: auto !important; */
   background-image: url("../image/IMG-20231226-WA0066-EDIT.jpg");
   background-repeat: no-repeat;
   background-size: cover !important;
   background-position: center;
 }
 .exp-container {
-  /* justify-content: space-evenly !important; */
-  /* align-items: center !important; */
+  /* height: auto !important; */
 }
 .experience {
   color: rgb(239, 126, 5);
-  /* margin-bottom: 2.1rem; */
-  /* height: 100vh !important; */
   height: auto !important;
   text-align: left;
   width: 100%;
@@ -67,16 +49,13 @@
   align-items: center !important;
   justify-content: center !important;
 }
-/* .card-items {
-  border-left: 4px solid #101010;
-} */
 .main-exp .experience {
   padding: 0px 30px;
+  margin-left: 20px;
   border-left: 3px solid #bababa;
 }
 .main-exp .experience .card-items {
   position: relative;
-  /* padding: 20px; */  
   cursor: pointer;
   transition: all 0.4s;
 }

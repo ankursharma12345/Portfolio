@@ -155,15 +155,8 @@ const Contact = (props) => {
                 <Typography id="number-typo">8795988520</Typography>
               </Button> */}
             </Grid>
-            <Grid container className="helper">
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={12}
-                className="buttons1"
-                // columnGap={1}
-              >
+            <Grid container className="helper" columnGap={1}>
+              <Grid item xs={12} sm={12} md={12} className="buttons1">
                 <Grid item md={1}>
                   <IconButton
                     href="https://www.linkedin.com/in/ankur-sharma-896bab1a0/"
@@ -183,10 +176,13 @@ const Contact = (props) => {
                     <GoogleIcon fontSize="large" />
                   </IconButton>
                 </Grid>
-                <Grid item md={1.8} className="whatsapp">
+                <Grid item>
                   <WhatsAppIcon fontSize="large" />
-                  <span id="number-typo">8795988520</span>
                 </Grid>
+                <Grid item className="whatsapp">
+                  8795988520
+                </Grid>
+                {/* <Typo id="number-typo">8795988520</span> */}
               </Grid>
             </Grid>
           </Grid>
