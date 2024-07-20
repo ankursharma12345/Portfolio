@@ -6,7 +6,7 @@
   margin-top: 0 !important;
 }
 .expo {
-  height: 100vh !important;
+  height: auto !important;
 }
 .card-items .degree {
   font-weight: bold;
@@ -25,22 +25,14 @@
   overflow: hidden !important;
   margin: 0 !important;
   padding: 0 !important;
-  /* height: inherit !important; */
-  /* height: inherit !important; */
-  height: 100vh !important;
-  /* height: inherit !important; */
-  /* height: auto !important; */
+  height: auto !important;
   background-image: url("../image/IMG-20231226-WA0066-EDIT.jpg");
   background-repeat: no-repeat;
   background-size: cover !important;
   background-position: center;
 }
-.exp-container {
-  /* height: auto !important; */
-}
 .experience {
   color: rgb(239, 126, 5);
-  height: auto !important;
   text-align: left;
   width: 100%;
 }

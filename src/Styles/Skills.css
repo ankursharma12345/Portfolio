@@ -5,11 +5,13 @@
   align-items: center;
   font-weight: bold;
   margin-top: 1rem;
+  overflow: hidden !important;
 }
-.main-container {
+.main-container-skills {
   background-color: azure;
   margin-top: 2rem;
-  /* height: auto; */
+  height: auto !important;
+  overflow: hidden !important;
 }
 .cards {
   display: flex;

@@ -157,13 +157,11 @@ const Experience = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} className="card-items">
                   <Card
-                    sx={
-                      {
-                        // minWidth: 280,
-                        // height: 135,
-                        // backgroundColor: "lightblue",
-                      }
-                    }
+                    sx={{
+                      // minWidth: 280,
+                      height: 135,
+                      // backgroundColor: "lightblue",
+                    }}
                   >
                     <CardContent>
                       <Typography className="degree">
