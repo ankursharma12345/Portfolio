@@ -12,18 +12,18 @@
 }
 .MuiDialog-paper {
   background-image: linear-gradient(
-    to right top,
-    #051937,
-    #4f90ae,
-    #1b969a,
-    #aacbbd,
-    #8da25e
+    to right,
+    #244855,
+    #244855,
+    #244855,
+    #244855,
+    #244855
   ) !important;
-  /* background-color: rgb(144, 222, 209) !important; */
 }
 .typography {
   /* color: rgb(144, 163, 18) !important; */
-  color: rgb(70, 54, 13) !important;
+  /* color: rgb(70, 54, 13) !important; */
+  color: goldenrod;
   font-family: "Times New Roman", Times, serif !important;
   font-size: 1.4rem !important;
 }

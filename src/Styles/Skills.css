@@ -1,10 +1,12 @@
-.heading {
-  color: black;
+.main-container-skills .heading {
+  color: goldenrod;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+  font-weight: bold !important;
+  font-size: larger !important;
   margin-top: 1rem;
+
   overflow: hidden !important;
 }
 .main-container-skills {
@@ -12,10 +14,17 @@
   margin-top: 2rem;
   height: auto !important;
   overflow: hidden !important;
+  background-image: linear-gradient(
+    to right,
+    #8697c4,
+    #6784a8,
+    #4c708c,
+    #365c70,
+    #244855
+  );
 }
 .cards {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
+  justify-content: center !important;
+  margin-top: 0.9rem !important;
 }

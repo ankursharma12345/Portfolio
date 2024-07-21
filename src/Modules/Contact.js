@@ -64,6 +64,7 @@ const Contact = (props) => {
             fontSize: "25px",
             fontStyle: "oblique",
             fontWeight: "bold",
+            color: "white",
           }}
         >
           {"GET IN TOUCH"}
