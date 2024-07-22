@@ -13,13 +13,15 @@
 #home,
 #about,
 #contact,
-#experience {
+#experience,
+#skills {
   color: white;
 }
 #home:hover,
 #about:hover,
 #experience:hover,
-#contact:hover {
+#contact:hover,
+#skills:hover {
   border-bottom: 4px solid goldenrod;
 }
 .close-icon {

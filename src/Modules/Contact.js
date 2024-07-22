@@ -34,7 +34,6 @@ const Contact = (props) => {
     });
   };
   const handleSave = () => {
-    debugger;
     isValid && props?.handleClose();
   };
   const { handleSubmit, errors, isValid } = useFormik({

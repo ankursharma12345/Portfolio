@@ -11,6 +11,7 @@ import * as React from "react";
 import { Fragment, useState } from "react";
 import "../Styles/Header.css";
 import Contact from "../Modules/Contact";
+import { styled } from "@mui/system";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,15 +34,13 @@ const Header = () => {
     }
   };
 
-  const openAbout = () => {
-    debugger;
-    document.getElementById("about")?.click();
-  };
-
   const handleClick = React.useCallback((e) => {
     setOpenContact(true);
   }, []);
-  const handleCloseContact = React.useCallback(() => {
+
+  const handleCloseContact = React.useCallback((e, reason) => {
+    // For not closing the modal without filling the contact form
+    if (reason && reason === "backdropClick") return;
     setOpenContact(false);
   }, []);
 
@@ -50,7 +49,6 @@ const Header = () => {
     handleClose: handleCloseContact,
     initialData: {},
   };
-
   return (
     <Fragment>
       <AppBar position="static" className="appbar">
@@ -92,7 +90,8 @@ const Header = () => {
                   style: {
                     maxHeight: "none", // Disable max height
                     width: calculateMenuWidth(), // Dynamically calculate width
-                    backgroundColor: "#a4ace0",
+                    // backgroundColor: "#a4ace0",
+                    backgroundColor: "darkgrey",
                   },
                 }}
               >
@@ -101,25 +100,35 @@ const Header = () => {
                 </Grid>
                 <Grid item className="mobileview">
                   <Button
-                    sx={{ display: "block" }}
+                    sx={{ display: "block", color: "white", fontSize: "large" }}
+                    href="#"
                     onClick={handleCloseNavMenu}
                   >
                     HOME
                   </Button>
                   <Button
-                    sx={{ display: "block" }}
+                    sx={{ display: "block", color: "white", fontSize: "large" }}
+                    href="#About"
                     onClick={handleCloseNavMenu}
                   >
                     ABOUT
                   </Button>
                   <Button
-                    sx={{ display: "block" }}
+                    sx={{ display: "block", color: "white", fontSize: "large" }}
+                    href="#Experience"
                     onClick={handleCloseNavMenu}
                   >
                     EXPERIENCE
                   </Button>
                   <Button
-                    sx={{ display: "block" }}
+                    sx={{ display: "block", color: "white", fontSize: "large" }}
+                    href="#Skills"
+                    onClick={handleCloseNavMenu}
+                  >
+                    SKILLS
+                  </Button>
+                  <Button
+                    sx={{ display: "block", color: "white", fontSize: "large" }}
                     onClick={() => {
                       handleClick();
                       handleCloseNavMenu();
@@ -130,6 +139,7 @@ const Header = () => {
                 </Grid>
               </Menu>
             </Grid>
+
             <Grid container justifyContent="space-evenly">
               <Grid
                 item
@@ -165,11 +175,18 @@ const Header = () => {
                   },
                 }}
               >
-                <Button id="home">HOME</Button>
-                <Button id="about" onClick={openAbout}>
+                <Button id="home" href="#">
+                  HOME
+                </Button>
+                <Button id="about" href="#About">
                   ABOUT
                 </Button>
-                <Button id="experience">EXPERIENCE</Button>
+                <Button id="experience" href="#Experience">
+                  EXPERIENCE
+                </Button>
+                <Button id="skills" href="#Skills">
+                  SKILLS
+                </Button>
                 <Button id="contact" onClick={handleClick}>
                   CONTACT
                 </Button>

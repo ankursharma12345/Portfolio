@@ -174,7 +174,7 @@ const About = () => {
   };
   return (
     <Fragment>
-      <Grid container className="container">
+      <Grid id="About" container className="container">
         <Grid item xs={12} sm={12} md={12} className="main-heading">
           ABOUT ME
         </Grid>

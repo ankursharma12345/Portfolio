@@ -5,10 +5,10 @@ function App() {
   return (
     <Fragment>
       {/* <Header/> */}
-      <Home/>
+      <Home />
       {/* <Home/> */}
     </Fragment>
-  )
+  );
 }
 
 export default App;

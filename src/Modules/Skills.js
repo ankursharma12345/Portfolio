@@ -9,80 +9,35 @@ import git_hub from "../image/github_logo.jpg";
 import tortoise_logo from "../image/version-control-tortoise-svn.jpg";
 
 const Skills = () => {
+  const allImages = [
+    first_Image,
+    second_Image,
+    third_Image,
+    fourth_Image,
+    git_hub,
+    tortoise_logo,
+  ];
   return (
     <Fragment>
-      <Grid container className="main-container-skills">
+      <Grid container id="Skills" className="main-container-skills">
         <Grid item xs={12} sm={12} md={12} className="heading">
           MY SKILLS
         </Grid>
         <Grid item xs={12} sm={12} md={12}>
           <Grid container className="cards" spacing={4} columnGap={8.5}>
-            <Grid item xs={4} sm={4} md={2}>
-              <Card>
-                <CardMedia
-                  component="img"
-                  height="130"
-                  width="5"
-                  image={first_Image}
-                  alt="paella dish"
-                />
-              </Card>
-            </Grid>
-            <Grid item xs={4} sm={4} md={2}>
-              <Card>
-                <CardMedia
-                  component="img"
-                  height="130"
-                  width="5"
-                  image={second_Image}
-                  alt="paella dish"
-                />
-              </Card>
-            </Grid>
-            <Grid item xs={4} sm={4} md={2}>
-              <Card>
-                <CardMedia
-                  component="img"
-                  height="130"
-                  width="5"
-                  image={third_Image}
-                  alt="paella dish"
-                />
-              </Card>
-            </Grid>
-            <Grid item xs={4} sm={4} md={2}>
-              <Card>
-                <CardMedia
-                  component="img"
-                  height="130"
-                  maxWidth="5"
-                  image={fourth_Image}
-                  alt="paella dish"
-                />
-              </Card>
-            </Grid>
-            <Grid item xs={4} sm={4} md={2}>
-              <Card>
-                <CardMedia
-                  component="img"
-                  height="130"
-                  width="5"
-                  image={git_hub}
-                  alt="paella dish"
-                />
-              </Card>
-            </Grid>
-            <Grid item xs={4} sm={4} md={2}>
-              <Card>
-                <CardMedia
-                  component="img"
-                  height="130"
-                  width="5"
-                  image={tortoise_logo}
-                  alt="paella dish"
-                />
-              </Card>
-            </Grid>
+            {allImages?.map((image, index) => (
+              <Grid item xs={4} sm={4} md={2} key={index}>
+                <Card className="card">
+                  <CardMedia
+                    component="img"
+                    height="130"
+                    width="5"
+                    image={image}
+                    alt={`skill ${index}`}
+                  />
+                </Card>
+              </Grid>
+            ))}
           </Grid>
         </Grid>
       </Grid>
