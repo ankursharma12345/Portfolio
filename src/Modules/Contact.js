@@ -33,8 +33,44 @@ const Contact = (props) => {
       return { ...prev };
     });
   };
-  const handleSave = () => {
+  // const { Name, Email, Message } = state;
+
+  const handleSave = async () => {
+    debugger;
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      // headers: {
+      //   "Content-Type": "application/json",
+      // },
+      body: JSON.stringify(state),
+    });
+    if (response.ok) {
+      alert("Message sent successfully");
+    } else {
+      alert("Failed to send message");
+    }
+    // isValid && props?.handleClose();
+    // let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    // let url;
+
+    // if (isMobile) {
+    //   url = `https://wa.me/send?name=${Name}&text=${encodeURIComponent(
+    //     Name,
+    //     Email,
+    //     Message
+    //   )}`;
+    // } else {
+    //   url = `https://web.whatsapp.com/send?name=${Name}&text=${encodeURIComponent(
+    //     Name,
+    //     Email,
+    //     Message
+    //   )}`;
+    // }
     isValid && props?.handleClose();
+
+    // Appending the message to the URL by encoding it
+    // url += `&text=${encodeURI(message)}&app_absent=0`;
+    // window.open(url);
   };
   const { handleSubmit, errors, isValid } = useFormik({
     initialValues: state,
