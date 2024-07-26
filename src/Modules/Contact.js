@@ -62,10 +62,6 @@ const Contact = (props) => {
     //   )}`;
     // }
     isValid && props?.handleClose();
-
-    // Appending the message to the URL by encoding it
-    // url += `&text=${encodeURI(message)}&app_absent=0`;
-    // window.open(url);
   };
   const { handleSubmit, errors, isValid } = useFormik({
     initialValues: state,
