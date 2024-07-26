@@ -9,9 +9,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { Fragment, useState } from "react";
-import "../Styles/Header.css";
 import Contact from "../Modules/Contact";
-import { styled } from "@mui/system";
+import "../Styles/Header.css";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -101,7 +100,7 @@ const Header = () => {
                 <Grid item className="mobileview">
                   <Button
                     sx={{ display: "block", color: "white", fontSize: "large" }}
-                    href="#"
+                    href="/#"
                     onClick={handleCloseNavMenu}
                   >
                     HOME
@@ -118,7 +117,7 @@ const Header = () => {
                     href="#Experience"
                     onClick={handleCloseNavMenu}
                   >
-                    EXPERIENCE
+                    EDUCATION
                   </Button>
                   <Button
                     sx={{ display: "block", color: "white", fontSize: "large" }}
@@ -175,14 +174,14 @@ const Header = () => {
                   },
                 }}
               >
-                <Button id="home" href="#">
+                <Button id="home" href="/#">
                   HOME
                 </Button>
                 <Button id="about" href="#About">
                   ABOUT
                 </Button>
                 <Button id="experience" href="#Experience">
-                  EXPERIENCE
+                  EDUCATION
                 </Button>
                 <Button id="skills" href="#Skills">
                   SKILLS

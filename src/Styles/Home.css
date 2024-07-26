@@ -20,7 +20,6 @@ html {
   width: 100% !important;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom right, left, right;
-  /* height: 91.2vh; */
   height: 100vh;
   animation-duration: 2s;
   animation-name: slideIn; /* Name can be anything */

@@ -33,15 +33,10 @@ const Contact = (props) => {
       return { ...prev };
     });
   };
-  // const { Name, Email, Message } = state;
 
   const handleSave = async () => {
-    debugger;
     const response = await fetch("/api/contact", {
       method: "POST",
-      // headers: {
-      //   "Content-Type": "application/json",
-      // },
       body: JSON.stringify(state),
     });
     if (response.ok) {
@@ -186,10 +181,6 @@ const Contact = (props) => {
               >
                 CANCEL
               </Button>
-              {/* <Button variant="none">
-                <WhatsAppIcon fontSize="small" />
-                <Typography id="number-typo">8795988520</Typography>
-              </Button> */}
             </Grid>
             <Grid container className="helper" columnGap={1}>
               <Grid item xs={12} sm={12} md={12} className="buttons1">
@@ -218,7 +209,6 @@ const Contact = (props) => {
                 <Grid item className="whatsapp">
                   8795988520
                 </Grid>
-                {/* <Typo id="number-typo">8795988520</span> */}
               </Grid>
             </Grid>
           </Grid>

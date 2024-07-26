@@ -11,14 +11,14 @@ var corsOptions = {
 };
 app.use(cors(corsOptions));
 
-const port = 3004;
+const port = 3000;
 
 app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/api/contact", (req, res) => {
-  debugger;
   const { name, email, message } = req.body;
+  console.log(email);
   console.log("Environment Variables Loaded:");
   console.log("Email User:", process.env.EMAIL_USER);
   console.log("App Password:", process.env.APP_PASSWORD);
@@ -31,7 +31,7 @@ app.post("/api/contact", (req, res) => {
     },
   });
   const mailOptions = {
-    from: email,
+    from: `${email}`,
     to: "ankursharma131198@gmail.com",
     subject: `Message from ${name}`,
     text: message,
