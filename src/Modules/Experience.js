@@ -5,7 +5,7 @@ import "../Styles/Education.css";
 const Experience = () => {
   return (
     <Fragment>
-      <Grid container className="expo" id="Experience">
+      <Grid container className="expo" id="Education">
         <Grid item xs={12} sm={12} md={12}>
           <Grid
             container
