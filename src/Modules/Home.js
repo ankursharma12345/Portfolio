@@ -10,7 +10,7 @@ import Skills from "./Skills";
 const Home = () => {
   return (
     <Fragment>
-      <Grid container id="#">
+      <Grid container id="Home">
         <Grid item xs={12} sm={12} md={12}>
           <Header />
         </Grid>

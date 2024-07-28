@@ -174,7 +174,7 @@ const Header = () => {
                   },
                 }}
               >
-                <Button id="home" href="#">
+                <Button id="home" href="#Home">
                   HOME
                 </Button>
                 <Button id="about" href="#About">
