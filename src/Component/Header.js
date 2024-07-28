@@ -114,7 +114,7 @@ const Header = () => {
                   </Button>
                   <Button
                     sx={{ display: "block", color: "white", fontSize: "large" }}
-                    href="#Experience"
+                    href="#Education"
                     onClick={handleCloseNavMenu}
                   >
                     EDUCATION
@@ -177,13 +177,13 @@ const Header = () => {
                 <Button id="home" href="#">
                   HOME
                 </Button>
-                <Button id="about" href="/#About">
+                <Button id="about" href="#About">
                   ABOUT
                 </Button>
-                <Button id="experience" href="/#Education">
+                <Button id="experience" href="#Education">
                   EDUCATION
                 </Button>
-                <Button id="skills" href="/#Skills">
+                <Button id="skills" href="#Skills">
                   SKILLS
                 </Button>
                 <Button id="contact" onClick={handleClick}>
