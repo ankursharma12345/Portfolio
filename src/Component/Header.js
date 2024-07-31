@@ -100,28 +100,28 @@ const Header = () => {
                 <Grid item className="mobileview">
                   <Button
                     sx={{ display: "block", color: "white", fontSize: "large" }}
-                    href="#"
+                    href="/#"
                     onClick={handleCloseNavMenu}
                   >
                     HOME
                   </Button>
                   <Button
                     sx={{ display: "block", color: "white", fontSize: "large" }}
-                    href="/#About"
+                    href="#About"
                     onClick={handleCloseNavMenu}
                   >
                     ABOUT
                   </Button>
                   <Button
                     sx={{ display: "block", color: "white", fontSize: "large" }}
-                    href="/#Education"
+                    href="#Education"
                     onClick={handleCloseNavMenu}
                   >
                     EDUCATION
                   </Button>
                   <Button
                     sx={{ display: "block", color: "white", fontSize: "large" }}
-                    href="/#Skills"
+                    href="#Skills"
                     onClick={handleCloseNavMenu}
                   >
                     SKILLS
@@ -177,13 +177,13 @@ const Header = () => {
                 <Button id="home" href="#">
                   HOME
                 </Button>
-                <Button id="about" href="/#About">
+                <Button id="about" href="#About">
                   ABOUT
                 </Button>
-                <Button id="experience" href="/#Education">
+                <Button id="experience" href="#Education">
                   EDUCATION
                 </Button>
-                <Button id="skills" href="/#Skills">
+                <Button id="skills" href="#Skills">
                   SKILLS
                 </Button>
                 <Button id="contact" onClick={handleClick}>
