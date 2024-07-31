@@ -20,7 +20,6 @@ import emailjs from "emailjs-com";
 
 const Contact = (props) => {
   const [state, setState] = useState(props?.initialData);
-  console.log(state);
   const formRef = useRef();
   useEffect(() => {
     setTimeout(() => {
@@ -41,7 +40,6 @@ const Contact = (props) => {
   }, []);
 
   const handleSave = async () => {
-    debugger;
     emailjs.sendForm("contact_service", "contact_form", formRef.current).then(
       (result) => {
         console.log(result.text);
@@ -62,7 +60,6 @@ const Contact = (props) => {
     }),
     onSubmit: handleSave,
   });
-  console.log(errors);
   return (
     <Fragment>
       <Dialog
