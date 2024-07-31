@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.fe2616be.css",
-    "main.js": "/Portfolio/static/js/main.b8497c1d.js",
+    "main.js": "/Portfolio/static/js/main.86411d12.js",
     "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/jexo-73REk-BB7-Y-unsplash.jpg": "/Portfolio/static/media/jexo-73REk-BB7-Y-unsplash.99d0c3966240a2d22710.jpg",
     "static/media/IMG-20231226-WA0066-EDIT.jpg": "/Portfolio/static/media/IMG-20231226-WA0066-EDIT.ab8f1a92b966444f15c5.jpg",
@@ -10,11 +10,11 @@
     "static/media/version-control-tortoise-svn.jpg": "/Portfolio/static/media/version-control-tortoise-svn.29aa56762b14059ac97e.jpg",
     "index.html": "/Portfolio/index.html",
     "main.fe2616be.css.map": "/Portfolio/static/css/main.fe2616be.css.map",
-    "main.b8497c1d.js.map": "/Portfolio/static/js/main.b8497c1d.js.map",
+    "main.86411d12.js.map": "/Portfolio/static/js/main.86411d12.js.map",
     "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe2616be.css",
-    "static/js/main.b8497c1d.js"
+    "static/js/main.86411d12.js"
   ]
 }
