@@ -11,17 +11,20 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 import "../Styles/Contact.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import emailjs from "emailjs-com";
 
 const Contact = (props) => {
   const [state, setState] = useState(props?.initialData);
+  console.log(state);
+  const formRef = useRef();
   useEffect(() => {
     setTimeout(() => {
-      let setFocus = document.getElementById("Name");
+      let setFocus = document.getElementById("name");
       setFocus?.focus();
     }, 50);
     // setState(props?.initialData); // For setting the value of all fields to be blank when we open modal
@@ -33,45 +36,33 @@ const Contact = (props) => {
       return { ...prev };
     });
   };
+  useEffect(() => {
+    emailjs.init("4YS6f0lMtQf4l4nMh");
+  }, []);
 
   const handleSave = async () => {
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      body: JSON.stringify(state),
-    });
-    if (response.ok) {
-      alert("Message sent successfully");
-    } else {
-      alert("Failed to send message");
-    }
-    // isValid && props?.handleClose();
-    // let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    // let url;
+    debugger;
+    emailjs.sendForm("contact_service", "contact_form", formRef.current).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
 
-    // if (isMobile) {
-    //   url = `https://wa.me/send?name=${Name}&text=${encodeURIComponent(
-    //     Name,
-    //     Email,
-    //     Message
-    //   )}`;
-    // } else {
-    //   url = `https://web.whatsapp.com/send?name=${Name}&text=${encodeURIComponent(
-    //     Name,
-    //     Email,
-    //     Message
-    //   )}`;
-    // }
     isValid && props?.handleClose();
   };
   const { handleSubmit, errors, isValid } = useFormik({
     initialValues: state,
     enableReinitialize: true,
     validationSchema: Yup.object({
-      Name: Yup.string().required("Name is required"),
-      Email: Yup.string().email("Email is invalid").required(),
+      name: Yup.string().required("Name is required"),
+      user_email: Yup.string().email("Email is invalid").required(),
     }),
     onSubmit: handleSave,
   });
+  console.log(errors);
   return (
     <Fragment>
       <Dialog
@@ -96,66 +87,71 @@ const Contact = (props) => {
           {"GET IN TOUCH"}
         </DialogTitle>
         <DialogContent>
-          <Grid container>
-            <Grid
-              item
-              xs={12}
-              sm={12}
-              md={12}
-              className="main-container"
-              direction="column"
-            >
-              <Typography className="typography">Your Name </Typography>
-              <TextField
-                id="Name"
-                size="small"
-                // autoFocus={true}
-                required={true}
-                onChange={handleChange}
-                value={state?.data?.["Name"]}
-                variant="outlined"
-                autoComplete="off"
-                sx={{
-                  width: 350,
-                  maxWidth: "100%",
-                }}
-                fullWidth
-                error={Boolean(errors.Name)}
-                helperText={errors.Name}
-              />
-              <Typography className="typography">Your Email </Typography>
-              <TextField
-                id="Email"
-                required={true}
-                sx={{
-                  width: 350,
-                  maxWidth: "100%",
-                }}
-                fullWidth
-                size="small"
-                onChange={handleChange}
-                value={state?.data?.["Email"]}
-                variant="outlined"
-                autoComplete="off"
-                error={Boolean(errors.Email)}
-                helperText={errors.Email}
-              />
-              <Typography className="typography">Your Message </Typography>
-              <TextField
-                id="message"
-                sx={{
-                  width: 350,
-                  maxWidth: "100%",
-                }}
-                fullWidth
-                onChange={handleChange}
-                value={state?.data?.["message"]}
-                multiline
-                rows={3}
-                variant="outlined"
-              />
+          <form ref={formRef}>
+            <Grid container>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={12}
+                className="main-container"
+                direction="column"
+              >
+                <Typography className="typography">Your Name </Typography>
+                <TextField
+                  id="name"
+                  size="small"
+                  name="name"
+                  // autoFocus={true}
+                  required={true}
+                  onChange={handleChange}
+                  value={state?.data?.["name"]}
+                  variant="outlined"
+                  autoComplete="off"
+                  sx={{
+                    width: 350,
+                    maxWidth: "100%",
+                  }}
+                  fullWidth
+                  error={Boolean(errors.name)}
+                  helperText={errors.name}
+                />
+                <Typography className="typography">Your Email </Typography>
+                <TextField
+                  id="user_email"
+                  name="user_email"
+                  required={true}
+                  sx={{
+                    width: 350,
+                    maxWidth: "100%",
+                  }}
+                  fullWidth
+                  size="small"
+                  onChange={handleChange}
+                  value={state?.data?.["user_email"]}
+                  variant="outlined"
+                  autoComplete="off"
+                  error={Boolean(errors.user_email)}
+                  helperText={errors.user_email}
+                />
+                <Typography className="typography">Your Message </Typography>
+                <TextField
+                  id="message"
+                  name="message"
+                  sx={{
+                    width: 350,
+                    maxWidth: "100%",
+                  }}
+                  fullWidth
+                  onChange={handleChange}
+                  value={state?.data?.["message"]}
+                  multiline
+                  rows={3}
+                  variant="outlined"
+                />
+              </Grid>
             </Grid>
-          </Grid>
+          </form>
         </DialogContent>
         <DialogActions>
           <Grid container spacing={3}>

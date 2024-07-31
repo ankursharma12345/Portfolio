@@ -25,11 +25,11 @@
   font-family: "Times New Roman", Times, serif !important;
   font-size: 1.4rem !important;
 }
-#Name-helper-text {
+#name-helper-text {
   color: white;
   font-size: 15px;
 }
-#Email-helper-text {
+#user_email-helper-text {
   color: white;
   font-size: 15px;
 }
