@@ -30,6 +30,7 @@
   margin-bottom: 2.1rem;
   text-align: left;
   width: 100%;
+  text-wrap: wrap !important;
 }
 .buttons {
   display: flex;
@@ -67,4 +68,10 @@
 }
 .my-image {
   max-height: 28rem !important;
+}
+.mui-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem !important;
+  justify-content: space-around !important;
 }

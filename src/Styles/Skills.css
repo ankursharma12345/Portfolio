@@ -28,3 +28,10 @@
   justify-content: center !important;
   margin-top: 0.9rem !important;
 }
+.mui-icon-skills {
+  display: flex;
+  /* justify-content: flex-end !important; */
+  align-items: center;
+  margin-bottom: 2rem !important;
+  justify-content: space-around !important;
+}

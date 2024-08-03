@@ -1,4 +1,4 @@
-import { Card, CardMedia, Grid } from "@mui/material";
+import { Card, CardMedia, Grid, Tooltip } from "@mui/material";
 import React, { Fragment } from "react";
 import "../Styles/Skills.css";
 import first_Image from "../image/Html_logo.jpg";
@@ -7,6 +7,8 @@ import third_Image from "../image/javacript_logo.png";
 import fourth_Image from "../image/materialui_logo.jpg";
 import git_hub from "../image/github_logo.jpg";
 import tortoise_logo from "../image/version-control-tortoise-svn.jpg";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 const Skills = () => {
   const allImages = [
@@ -17,9 +19,15 @@ const Skills = () => {
     git_hub,
     tortoise_logo,
   ];
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <Fragment>
-      <Grid container id="Skills" className="main-container-skills">
+      <Grid container id="Skills" className="main-container-skills" spacing={3}>
         <Grid item xs={12} sm={12} md={12} className="heading">
           MY SKILLS
         </Grid>
@@ -39,6 +47,14 @@ const Skills = () => {
               </Grid>
             ))}
           </Grid>
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} className="mui-icon-skills">
+          <Tooltip title="Previous Page" placement="right-start">
+            <ArrowUpwardIcon
+              onClick={() => scrollToSection("Education")}
+              sx={{ backgroundColor: "white", cursor: "pointer" }}
+            />
+          </Tooltip>
         </Grid>
       </Grid>
     </Fragment>

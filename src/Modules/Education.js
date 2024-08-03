@@ -1,8 +1,16 @@
-import { Card, CardContent, Grid, Typography } from "@mui/material";
+import { Card, CardContent, Grid, Tooltip, Typography } from "@mui/material";
 import React, { Fragment } from "react";
 import "../Styles/Education.css";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
-const Experience = () => {
+const Education = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <Fragment>
       <Grid container className="expo" id="Education">
@@ -64,11 +72,7 @@ const Experience = () => {
                   </Card>
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} className="card-items">
-                  <Card
-                    sx={{
-                      height: 135,
-                    }}
-                  >
+                  <Card>
                     <CardContent>
                       <Typography className="degree">
                         POST-GRADUATION
@@ -78,7 +82,7 @@ const Experience = () => {
                       </Typography>
 
                       <Typography>
-                        My major subjects are Physics, Chemistry and Mathematics
+                        My major subject is Computer Applications
                       </Typography>
                     </CardContent>
                   </Card>
@@ -88,8 +92,22 @@ const Experience = () => {
           </Grid>
         </Grid>
       </Grid>
+      <Grid item xs={12} sm={12} md={12} className="mui-icon">
+        <Tooltip title="Previous Page" placement="right-start">
+          <ArrowUpwardIcon
+            onClick={() => scrollToSection("About")}
+            sx={{ backgroundColor: "white", cursor: "pointer" }}
+          />
+        </Tooltip>
+        <Tooltip title="Next Page" placement="right-start">
+          <ArrowDownwardIcon
+            onClick={() => scrollToSection("Skills")}
+            sx={{ backgroundColor: "white", cursor: "pointer" }}
+          />
+        </Tooltip>
+      </Grid>
     </Fragment>
   );
 };
 
-export default Experience;
+export default Education;

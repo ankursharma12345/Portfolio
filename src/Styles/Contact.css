@@ -48,11 +48,14 @@
   justify-content: center;
 }
 .buttons1 {
-  margin-left: 1.2rem !important;
+  margin-left: 2rem !important;
 }
 .helper {
   margin-top: 1.3rem;
 }
 .whatsapp {
   font-weight: bold;
+}
+.MuiOutlinedInput-notchedOutline {
+  color: white !important;
 }

@@ -1,4 +1,6 @@
-import { Button, Grid } from "@mui/material";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import { Button, Grid, Tooltip } from "@mui/material";
 import React, { Fragment } from "react";
 import "../Styles/About.css";
 import aboutImage from "../image/jexo-73REk-BB7-Y-unsplash.jpg";
@@ -6,6 +8,12 @@ import aboutImage from "../image/jexo-73REk-BB7-Y-unsplash.jpg";
 const About = () => {
   const handleClick = () => {
     window.open("Ankur_Resume_June.pdf", "_blank", "noreferrer");
+  };
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
   return (
     <Fragment>
@@ -40,15 +48,35 @@ const About = () => {
                   understanding of modern web development practices.
                 </Grid>
                 <Grid item>
-                  Currently, I work as a Web Application Developer at Pinnacle
-                  Finserv Advisors, where I leverage my expertise in React Js,
-                  Material UI, JavaScript, HTML, and GitHub to build innovative
-                  and user-friendly web applications.
+                  Currently,{" "}
+                  <span style={{ color: "white", fontWeight: "bold" }}>
+                    I work as a Web Application Developer at Pinnacle Finserv
+                    Advisors
+                  </span>
+                  , where I leverage my expertise in{" "}
+                  <span
+                    style={{
+                      color: "white",
+                      fontWeight: "bold",
+                      fontStyle: "italic",
+                    }}
+                  >
+                    React Js, Material UI, JavaScript, HTML, GitHub and Tortoise
+                    SVN
+                  </span>{" "}
+                  to build innovative and user-friendly web applications.
                 </Grid>
                 <Grid item>
                   At Pinnacle, I am responsible for creating reusable
                   components, optimizing code for better performance, solving
                   bugs, and debugging effectively.
+                </Grid>
+                <Grid item>
+                  Over the past 1+ years, I have gained experience in web
+                  development, focusing on front-end technologies. My journey
+                  has equipped me with the skills to deliver high-quality,
+                  scalable web applications and to continuously improve user
+                  experience through innovative solutions.
                 </Grid>
 
                 <Grid item>
@@ -70,6 +98,20 @@ const About = () => {
           <Button size="large" className="download" onClick={handleClick}>
             DOWNLOAD CV
           </Button>
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} className="mui-icon">
+          <Tooltip title="Previous Page" placement="right-start">
+            <ArrowUpwardIcon
+              onClick={() => scrollToSection("Home")}
+              sx={{ backgroundColor: "white", cursor: "pointer" }}
+            />
+          </Tooltip>
+          <Tooltip title="Next Page" placement="right-start">
+            <ArrowDownwardIcon
+              onClick={() => scrollToSection("Education")}
+              sx={{ backgroundColor: "white", cursor: "pointer" }}
+            />
+          </Tooltip>
         </Grid>
       </Grid>
     </Fragment>

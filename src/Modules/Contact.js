@@ -34,20 +34,29 @@ const Contact = (props) => {
       prev[e.target.id] = e.target.value;
       return { ...prev };
     });
+    const textBoxIds = ["name", "user_email", "message"];
+
+    textBoxIds.forEach((id) => {
+      if (document?.getElementById(id)) {
+        document.getElementById(id).style.color = "white";
+      }
+    });
   };
   useEffect(() => {
     emailjs.init("4YS6f0lMtQf4l4nMh");
   }, []);
 
   const handleSave = async () => {
-    emailjs.sendForm("contact_service", "contact_form", formRef.current).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    await emailjs
+      .sendForm("contact_service", "contact_form", formRef.current)
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     isValid && props?.handleClose();
   };
@@ -56,10 +65,15 @@ const Contact = (props) => {
     enableReinitialize: true,
     validationSchema: Yup.object({
       name: Yup.string().required("Name is required"),
-      user_email: Yup.string().email("Email is invalid").required(),
+      user_email: Yup.string()
+        .email("Email is invalid")
+        .required("Email is invalid"),
     }),
     onSubmit: handleSave,
   });
+  // const getValue = document.getElementById("name");
+  // getValue.innerText.style.color = "white";
+
   return (
     <Fragment>
       <Dialog
@@ -173,7 +187,7 @@ const Contact = (props) => {
             </Grid>
             <Grid container className="helper" columnGap={1}>
               <Grid item xs={12} sm={12} md={12} className="buttons1">
-                <Grid item md={1}>
+                <Grid item xs={2.4} sm={1} md={1}>
                   <IconButton
                     href="https://www.linkedin.com/in/ankur-sharma-896bab1a0/"
                     target="_blank"
@@ -182,7 +196,7 @@ const Contact = (props) => {
                     <LinkedInIcon fontSize="large" />
                   </IconButton>
                 </Grid>
-                <Grid item md={1}>
+                {/* <Grid item md={1}>
                   <IconButton
                     component="a"
                     href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
@@ -191,7 +205,7 @@ const Contact = (props) => {
                   >
                     <GoogleIcon fontSize="large" />
                   </IconButton>
-                </Grid>
+                </Grid> */}
                 <Grid item>
                   <WhatsAppIcon fontSize="large" />
                 </Grid>

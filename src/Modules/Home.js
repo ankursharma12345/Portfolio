@@ -4,13 +4,13 @@ import Header from "../Component/Header";
 import "../Styles/Home.css";
 import image from "../image/new_image.png";
 import About from "./About";
-import Experience from "./Experience";
 import Skills from "./Skills";
+import Education from "./Education";
 
 const Home = () => {
   return (
     <Fragment>
-      <Grid containe>
+      <Grid container id="Home">
         <Grid item xs={12} sm={12} md={12}>
           <Header />
         </Grid>
@@ -51,7 +51,7 @@ const Home = () => {
       </Grid>
       <About />
 
-      <Experience />
+      <Education />
       <Skills />
     </Fragment>
   );
