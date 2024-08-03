@@ -34,7 +34,6 @@ const Home = () => {
               xs={12}
               sm={12}
               md={5}
-              // justifyContent="space-around"
               className="right"
               sx={{
                 backgroundImage: `url(${image})`,

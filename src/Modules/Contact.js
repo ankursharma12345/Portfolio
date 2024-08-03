@@ -1,5 +1,5 @@
-import GoogleIcon from "@mui/icons-material/Google";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import {
   Button,
   Dialog,
@@ -11,12 +11,11 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import React, { Fragment, useEffect, useRef, useState } from "react";
-import "../Styles/Contact.css";
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import emailjs from "emailjs-com";
+import { useFormik } from "formik";
+import React, { Fragment, useEffect, useRef, useState } from "react";
+import * as Yup from "yup";
+import "../Styles/Contact.css";
 
 const Contact = (props) => {
   const [state, setState] = useState(props?.initialData);
@@ -51,10 +50,10 @@ const Contact = (props) => {
       .sendForm("contact_service", "contact_form", formRef.current)
       .then(
         (result) => {
-          console.log(result.text);
+          alert("Thank you contacting!!");
         },
         (error) => {
-          console.log(error.text);
+          alert("Can't send");
         }
       );
 
@@ -71,8 +70,6 @@ const Contact = (props) => {
     }),
     onSubmit: handleSave,
   });
-  // const getValue = document.getElementById("name");
-  // getValue.innerText.style.color = "white";
 
   return (
     <Fragment>
@@ -113,7 +110,6 @@ const Contact = (props) => {
                   id="name"
                   size="small"
                   name="name"
-                  // autoFocus={true}
                   required={true}
                   onChange={handleChange}
                   value={state?.data?.["name"]}
@@ -196,16 +192,6 @@ const Contact = (props) => {
                     <LinkedInIcon fontSize="large" />
                   </IconButton>
                 </Grid>
-                {/* <Grid item md={1}>
-                  <IconButton
-                    component="a"
-                    href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
-                    target="_blank"
-                    rel="noopener noreferrer" // This prevents security risks with target="_blank"
-                  >
-                    <GoogleIcon fontSize="large" />
-                  </IconButton>
-                </Grid> */}
                 <Grid item>
                   <WhatsAppIcon fontSize="large" />
                 </Grid>

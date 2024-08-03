@@ -30,7 +30,6 @@
 }
 .mui-icon-skills {
   display: flex;
-  /* justify-content: flex-end !important; */
   align-items: center;
   margin-bottom: 2rem !important;
   justify-content: space-around !important;
