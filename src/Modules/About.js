@@ -108,7 +108,7 @@ const About = () => {
           </Tooltip>
           <Tooltip title="Next Page" placement="right-start">
             <ArrowDownwardIcon
-              onClick={() => scrollToSection("Education")}
+              onClick={() => scrollToSection("Experience")}
               sx={{ backgroundColor: "white", cursor: "pointer" }}
             />
           </Tooltip>

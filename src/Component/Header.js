@@ -114,6 +114,14 @@ const Header = () => {
                   </Button>
                   <Button
                     sx={{ display: "block", color: "white", fontSize: "large" }}
+                    href="#Experience"
+                    onClick={handleCloseNavMenu}
+                  >
+                    EXPERIENCE
+                  </Button>
+
+                  <Button
+                    sx={{ display: "block", color: "white", fontSize: "large" }}
                     href="#Education"
                     onClick={handleCloseNavMenu}
                   >
@@ -179,6 +187,9 @@ const Header = () => {
                 </Button>
                 <Button id="about" href="#About">
                   ABOUT
+                </Button>
+                <Button id="experience" href="#Experience">
+                  EXPERIENCE
                 </Button>
                 <Button id="experience" href="#Education">
                   EDUCATION

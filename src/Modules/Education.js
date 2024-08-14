@@ -95,7 +95,7 @@ const Education = () => {
       <Grid item xs={12} sm={12} md={12} className="mui-icon">
         <Tooltip title="Previous Page" placement="right-start">
           <ArrowUpwardIcon
-            onClick={() => scrollToSection("About")}
+            onClick={() => scrollToSection("Experience")}
             sx={{ backgroundColor: "white", cursor: "pointer" }}
           />
         </Tooltip>

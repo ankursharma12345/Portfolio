@@ -6,6 +6,7 @@ import image from "../image/new_image.png";
 import About from "./About";
 import Skills from "./Skills";
 import Education from "./Education";
+import Experience from "./Experience";
 
 const Home = () => {
   return (
@@ -49,7 +50,7 @@ const Home = () => {
         </Grid>
       </Grid>
       <About />
-
+      <Experience />
       <Education />
       <Skills />
     </Fragment>
