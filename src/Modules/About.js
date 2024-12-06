@@ -7,7 +7,7 @@ import aboutImage from "../image/jexo-73REk-BB7-Y-unsplash.jpg";
 
 const About = () => {
   const handleClick = () => {
-    window.open("Ankur_Resume_June.pdf", "_blank", "noreferrer");
+    window.open("Final_Resume.pdf", "_blank", "noreferrer");
   };
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -17,7 +17,7 @@ const About = () => {
   };
   return (
     <Fragment>
-      <Grid id="About" container className="container">
+      <Grid container id="About" className="container">
         <Grid item xs={12} sm={12} md={12} className="main-heading">
           ABOUT ME
         </Grid>

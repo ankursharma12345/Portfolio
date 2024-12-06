@@ -56,6 +56,13 @@ const Contact = (props) => {
           alert("Can't send");
         }
       );
+    emailjs.send("contact_service", "template_g4ms1rc", {
+      user_email: state.user_email,
+      user_name: state.name,
+      reply_to: state.user_email,
+      name: state.name,
+      message: `Thank you for contacting me ${state.name}`,
+    });
 
     isValid && props?.handleClose();
   };

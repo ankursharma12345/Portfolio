@@ -1,6 +1,6 @@
 .container {
   height: auto !important;
-  background-color: black !important;
+  background-color: rgb(25, 25, 26) !important;
   text-align: center;
 }
 
@@ -22,11 +22,14 @@
   display: flex;
   justify-content: center;
   height: 50px !important;
+  font-size: 20px !important;
+  margin-top: 1rem !important;
   font-weight: bold;
   color: goldenrod;
 }
 .about {
-  color: rgb(239, 126, 5);
+  /* color: rgb(239, 126, 5); */
+  color: goldenrod;
   margin-bottom: 2.1rem;
   text-align: left;
   width: 100%;
