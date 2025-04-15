@@ -6,9 +6,17 @@ import "../Styles/About.css";
 import aboutImage from "../image/jexo-73REk-BB7-Y-unsplash.jpg";
 
 const About = () => {
+  // const handleClick = () => {
+  //   window.open("Updated_Resume.pdf", "_blank", "noreferrer");
+  // };
   const handleClick = () => {
-    window.open("Updated_Resume.pdf", "_blank", "noreferrer");
+    window.open(
+      process.env.PUBLIC_URL + "/Updated_Resume.pdf",
+      "_blank",
+      "noreferrer"
+    );
   };
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
