@@ -21,9 +21,10 @@
   ) !important;
 }
 .typography {
-  color: goldenrod;
+  /* color: goldenrod; */
+  color: white;
   font-family: "Times New Roman", Times, serif !important;
-  font-size: 1.4rem !important;
+  font-size: 1.1rem !important;
 }
 #name-helper-text {
   color: white;
