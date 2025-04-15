@@ -7,7 +7,7 @@ import aboutImage from "../image/jexo-73REk-BB7-Y-unsplash.jpg";
 
 const About = () => {
   const handleClick = () => {
-    window.open("ANKUR_RESUME_JAN_2025.pdf", "_blank", "noreferrer");
+    window.open("Updated_Resume.pdf", "_blank", "noreferrer");
   };
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
