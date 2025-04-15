@@ -48,14 +48,6 @@ const Header = () => {
     handleClose: handleCloseContact,
     initialData: {},
   };
-  const headerBtn = [
-    "HOME",
-    "ABOUT",
-    "EXPERIENCE",
-    "EDUCATION",
-    "SKILLS",
-    "CONTACT",
-  ];
   return (
     <Fragment>
       <AppBar position="static" className="appbar">

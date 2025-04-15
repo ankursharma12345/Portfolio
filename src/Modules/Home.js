@@ -27,8 +27,9 @@ const Home = () => {
                   Website Designer
                 </div>
                 <div className="forth">
-                  I am skilled and passionate web designer having 1+ year
-                  experience in React Js, Material UI, Javascript and GitHub
+                  I am a skilled and passionate web designer with 2 years of
+                  experience in React.js, Material UI, JavaScript, and GitHub
+                  desktop, and I’m expanding my skill set with Next.js.
                 </div>
               </Grid>
               <Grid
