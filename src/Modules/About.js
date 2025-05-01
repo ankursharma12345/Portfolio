@@ -4,11 +4,15 @@ import { Button, Grid, Tooltip } from "@mui/material";
 import React, { Fragment } from "react";
 import "../Styles/About.css";
 import aboutImage from "../image/jexo-73REk-BB7-Y-unsplash.jpg";
+import getExp from "../Utils";
 
 const About = () => {
   // const handleClick = () => {
   //   window.open("Updated_Resume.pdf", "_blank", "noreferrer");
   // };
+
+  const { expInYears, expInMonths } = getExp();
+
   const handleClick = () => {
     window.open(
       process.env.PUBLIC_URL + "/Updated_Resume.pdf",
@@ -80,11 +84,11 @@ const About = () => {
                   bugs, and debugging effectively.
                 </Grid>
                 <Grid item>
-                  Over the past 1+ years, I have gained experience in web
+                  {`Over the past ${expInYears}.${expInMonths} years, I have gained experience in web
                   development, focusing on front-end technologies. My journey
                   has equipped me with the skills to deliver high-quality,
                   scalable web applications and to continuously improve user
-                  experience through innovative solutions.
+                  experience through innovative solutions.`}
                 </Grid>
 
                 <Grid item>
