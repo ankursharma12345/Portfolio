@@ -89,7 +89,6 @@ const Header = () => {
                   style: {
                     maxHeight: "none", // Disable max height
                     width: calculateMenuWidth(), // Dynamically calculate width
-                    // backgroundColor: "#a4ace0",
                     backgroundColor: "darkgrey",
                   },
                 }}
