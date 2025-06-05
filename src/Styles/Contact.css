@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column !important;
 }
 .buttons {
   display: flex;
@@ -11,18 +12,11 @@
   font-weight: bold !important;
 }
 .MuiDialog-paper {
-  background-image: linear-gradient(
-    to right,
-    #244855,
-    #244855,
-    #244855,
-    #244855,
-    #244855
-  ) !important;
+  /* background-image: linear-gradient(to right top, #060917, #060917, #060917, #060917, #060917) !important; */
 }
 .typography {
-  /* color: goldenrod; */
-  color: white;
+  color: goldenrod;
+  /* color: white; */
   font-family: "Times New Roman", Times, serif !important;
   font-size: 1.1rem !important;
 }
@@ -37,6 +31,7 @@
 .MuiButtonBase-root-MuiButton-root {
   font-size: 16px !important;
   font-weight: 400px;
+  color: black !important;
 }
 .number-typo {
   font-size: 0.95rem !important;

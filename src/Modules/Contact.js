@@ -33,13 +33,16 @@ const Contact = (props) => {
       prev[e.target.id] = e.target.value;
       return { ...prev };
     });
-    const textBoxIds = ["name", "user_email", "message"];
 
-    textBoxIds.forEach((id) => {
-      if (document?.getElementById(id)) {
-        document.getElementById(id).style.color = "white";
-      }
-    });
+    // const textBoxIds = ["name", "user_email", "message"];
+
+    // textBoxIds.forEach((id) => {
+    //   if (document?.getElementById(id)) {
+    //     // document.getElementById(id).style.color = "white";
+    //   }
+
+
+    // });
   };
   useEffect(() => {
     emailjs.init("4YS6f0lMtQf4l4nMh");
@@ -86,6 +89,7 @@ const Contact = (props) => {
         onClose={props?.handleClose}
         fullWidth={true}
         maxWidth="md"
+        direction="column"
       >
         <DialogTitle
           sx={{
@@ -96,7 +100,8 @@ const Contact = (props) => {
             fontSize: "25px",
             fontStyle: "oblique",
             fontWeight: "bold",
-            color: "white",
+            color:"goldenrod"
+
           }}
         >
           {"GET IN TOUCH"}
@@ -110,7 +115,7 @@ const Contact = (props) => {
                 sm={12}
                 md={12}
                 className="main-container"
-                direction="column"
+                
               >
                 <Typography className="typography">Your Name </Typography>
                 <TextField

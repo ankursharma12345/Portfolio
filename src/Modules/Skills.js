@@ -1,30 +1,36 @@
-import { Card, CardMedia, Grid, Tooltip } from "@mui/material";
-import React, { Fragment } from "react";
-import "../Styles/Skills.css";
-import first_Image from "../image/Html_logo.jpg";
-import second_Image from "../image/1460px-React_logo.png";
-import third_Image from "../image/javacript_logo.png";
-import fourth_Image from "../image/materialui_logo.jpg";
-import git_hub from "../image/github_logo.jpg";
-import tortoise_logo from "../image/version-control-tortoise-svn.jpg";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import { Card, CardMedia, Grid, Tooltip } from "@mui/material";
+import { Fragment } from "react";
+import "../Styles/Skills.css";
+import html from "../image/HTML.jpg";
+import js from "../image/JS.jpg";
+import mui from "../image/MUI.jpg";
+import nextjs from "../image/Nextjs.png";
+import react from "../image/React.png";
+import redux from "../image/Redux.jpg";
+import tortoise_logo from "../image/TortoiseSVN.jpg";
+import tailwindcss from "../image/tailwindcss.png";
 
 const Skills = () => {
   const allImages = [
-    first_Image,
-    second_Image,
-    third_Image,
-    fourth_Image,
-    git_hub,
+    html,
+    react,
+    js,
+    mui,
     tortoise_logo,
+    redux,
+    nextjs,
+    tailwindcss
   ];
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+    window.history.replaceState(null, '',"#Education");
   };
+
+
   return (
     <Fragment>
       <Grid container id="Skills" className="main-container-skills" spacing={3}>
@@ -51,7 +57,7 @@ const Skills = () => {
         <Grid item xs={12} sm={12} md={12} className="mui-icon-skills">
           <Tooltip title="Previous Page" placement="right-start">
             <ArrowUpwardIcon
-              onClick={() => scrollToSection("Education")}
+              onClick={() =>  scrollToSection("Education")}
               sx={{ backgroundColor: "white", cursor: "pointer" }}
             />
           </Tooltip>

@@ -1,28 +1,19 @@
 import { Grid } from "@mui/material";
-import React, { Fragment } from "react";
-import Header from "../Component/Header";
+import { Fragment } from "react";
 import "../Styles/Home.css";
+import getExp from "../Utils";
 import image from "../image/new_image.png";
 import About from "./About";
 import Education from "./Education";
 import Experience from "./Experience";
 import Skills from "./Skills";
-import getExp from "../Utils";
 const Home = () => {
-  debugger;
-  // const date = new Date();
-  // let currentMonth = date.getMonth() + 1;
-  // let currentYear = date.getFullYear().toString();
-  // let expInYears = currentYear.slice(1) - 23;
-  // let expInMonths = parseInt(currentMonth) - 5;
-
   const { expInYears, expInMonths } = getExp();
-
   return (
     <Fragment>
       <Grid container id="Home">
         <Grid item xs={12} sm={12} md={12}>
-          <Header />
+          {/* <Header /> */}
         </Grid>
         <Grid container>
           <Grid item xs={12} sm={12} md={12}>
@@ -49,7 +40,6 @@ const Home = () => {
                 className="right"
                 sx={{
                   backgroundImage: `url(${image})`,
-                  // height: "80%",
                   height: { xs: "60%", sm: "60%", md: "80%" },
                   borderRadius: "30px 30px 30px 30px",
                   backgroundRepeat: "no-repeat",

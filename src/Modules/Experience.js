@@ -11,6 +11,12 @@ const Experience = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const resetHash = (direction) => {
+    if(direction==="upward") return window.history.replaceState(null, '', "#About");
+    window.history.replaceState(null, '',"#Education");
+   };
+
   return (
     <Fragment>
       <Grid id="Experience" container className="experience-container">
@@ -112,13 +118,17 @@ const Experience = () => {
         <Grid item xs={12} sm={12} md={12} className="mui-icon-for-exp">
           <Tooltip title="Previous Page" placement="right-start">
             <ArrowUpwardIcon
-              onClick={() => scrollToSection("About")}
+              onClick={() => { scrollToSection("About")
+                resetHash("upward")
+              }}
               sx={{ backgroundColor: "white", cursor: "pointer" }}
             />
           </Tooltip>
           <Tooltip title="Next Page" placement="right-start">
             <ArrowDownwardIcon
-              onClick={() => scrollToSection("Education")}
+              onClick={() =>{ scrollToSection("Education")
+                resetHash("downWard")
+              }}
               sx={{ backgroundColor: "white", cursor: "pointer" }}
             />
           </Tooltip>

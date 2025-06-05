@@ -1,15 +1,12 @@
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import { Button, Grid, Tooltip } from "@mui/material";
-import React, { Fragment } from "react";
-import "../Styles/About.css";
+import { Fragment } from "react";
 import aboutImage from "../image/jexo-73REk-BB7-Y-unsplash.jpg";
+import "../Styles/About.css";
 import getExp from "../Utils";
 
 const About = () => {
-  // const handleClick = () => {
-  //   window.open("Updated_Resume.pdf", "_blank", "noreferrer");
-  // };
 
   const { expInYears, expInMonths } = getExp();
 
@@ -21,11 +18,15 @@ const About = () => {
     );
   };
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = ({ sectionId, direction }) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+    if (direction === "upward") {
+      document.getElementById('Header')?.scrollIntoView({ behavior: 'smooth' });
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    } else window.history.replaceState(null, '', "#Experience");
   };
   return (
     <Fragment>
@@ -114,13 +115,17 @@ const About = () => {
         <Grid item xs={12} sm={12} md={12} className="mui-icon">
           <Tooltip title="Previous Page" placement="right-start">
             <ArrowUpwardIcon
-              onClick={() => scrollToSection("Home")}
+              onClick={() => {
+                scrollToSection({ sectionId: "Home", direction: "upward" })
+              }}
               sx={{ backgroundColor: "white", cursor: "pointer" }}
             />
           </Tooltip>
           <Tooltip title="Next Page" placement="right-start">
             <ArrowDownwardIcon
-              onClick={() => scrollToSection("Experience")}
+              onClick={() => {
+                scrollToSection({ sectionId: "Experience", direction: "downWard" })
+              }}
               sx={{ backgroundColor: "white", cursor: "pointer" }}
             />
           </Tooltip>
